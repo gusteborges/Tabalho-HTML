@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <script src="js/script.js" defer></script>
+    <title>Escritório de Advocacia</title>
+</head>
+<body>
+    <header>
+      <div class="logo-advocacia">
+        <h1>Panteão Advocacia</h1>
+        <img src="IMG/advocate.png" alt="Logotipo">
+      </div>
+        <nav>
+          <ul class="">
+            <li><a class="link" href="index.html">Iniciar</a></li>
+            <li><a class="link" href="servicos.html">Serviços</a></li>
+            <li><a class="link" href="sobre.html">Sobre</a></li>
+            <li><a class="link" href="time.html">Time</a></li>
+            <li><a class="link" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="servicos">
+      <h1>Serviços</h1>
+      <p>Aqui você encontra uma descrição breve dos serviços oferecidos pelo escritório.</p>
+      <p>Contatos:</p>
+      <div class="contato">
+        <h2>Deixe seu contato Nos ligaremos para você</h2>
+        <form id="formulario" onsubmit="enviarContato(event)">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required>
+  
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" required>
+  
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" required>
+  
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" required>
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  
+    <section id="noticias">
+      <h1>Últimas Notícias</h1>
+      <div class="publicacao" onclick="mostrarDescricao(0)">
+        <h2>Novo Código de Ética Profissional para Advogados</h2>
+        <p>O Conselho Federal da OAB aprovou o novo Código de Ética Profissional para Advogados, trazendo mudanças significativas nas diretrizes e condutas éticas da profissão. Saiba mais sobre as alterações e os impactos esperados. (Click para saber Mais...)</p>
+        <div class="descricao" id="descricao-0">O novo Código de Ética Profissional para Advogados foi elaborado com o intuito de se adequar às transformações sociais e tecnológicas que impactam o exercício da advocacia. Entre as principais mudanças, destacam-se a inclusão de regras relacionadas ao uso da tecnologia na advocacia, a proteção de dados dos clientes e a publicidade profissional. Essas alterações visam garantir a conduta ética e a excelência na prática advocatícia.</div>
+      </div>
+      <div class="publicacao" onclick="mostrarDescricao(1)">
+        <h2>O Crescimento do Direito Digital</h2>
+        <p>O Direito Digital tem ganhado cada vez mais destaque, impulsionado pelo avanço tecnológico e a necessidade de regulamentação das questões legais no ambiente digital. Conheça as principais áreas de atuação e os desafios enfrentados pelos advogados nessa área em expansão.(Click para saber Mais...)</p>
+        <div class="descricao" id="descricao-1">Com o aumento da digitalização, surgem novas questões legais que precisam ser abordadas e regulamentadas. O Direito Digital abrange áreas como privacidade de dados, segurança da informação, contratos eletrônicos, crimes cibernéticos, entre outras. Os advogados que atuam nesse campo precisam se manter atualizados e desenvolver habilidades específicas para lidar com os desafios jurídicos relacionados à tecnologia.</div>
+      </div>
+      <div class="publicacao" onclick="mostrarDescricao(2)">
+        <h2>Advocacia Empresarial: Uma Aliada para o Sucesso dos Negócios</h2>
+        <p>A advocacia empresarial desempenha um papel fundamental no suporte jurídico das empresas, auxiliando na prevenção de litígios, na gestão de contratos, na análise de riscos e em outras questões legais. Saiba como contar com advogados especializados pode contribuir para o sucesso dos negócios.(Click para saber Mais...)</p>
+        <div class="descricao" id="descricao-2">A advocacia empresarial atua como uma parceira estratégica das empresas, ajudando na identificação e solução de problemas jurídicos que possam impactar o seu desenvolvimento. Com um suporte jurídico adequado, as empresas podem evitar litígios desnecessários, estar em conformidade com a legislação, proteger seus ativos e se beneficiar de oportunidades de negócio. Ter advogados especializados nessa área é essencial para garantir uma gestão legal eficiente e alcançar o sucesso empresarial.</div>
+      </div>
+    </section>
+
+    <footer>
+        <div id="top-ftr">
+          <p class="textatend">Atendimento via Whatsapp</p>
+          <p class="numeroatend">(31) 3139-5271</p>
+          <button class="btn-wpp" onclick="window.location.href = 'contato.html'">
+            <img src="IMG/whatsapp-logo-png-0.png" width="42px" height="42px" class="logo-wpp">
+            <p class="text-wpp">Clique! Estamos Online!</p>
+          </button>
+          <a href="time.html" class="text-trabcon">Trabalhe Conosco</a>
+        </div>
+      
+        <div id="amst-ftr">
+          <div class="contact-info">
+            <img src="IMG/Telephone-Transparent-Images-PNG.png" alt="foto_telefone" class="img-tele" width="35" height="35">
+            <span>(33) 3114-2132</span>
+          </div>
+      
+          <div class="contact-info">
+            <img src="IMG/pngwing.com.png" alt="foto_telefone" class="img-tele" width="35" height="35">
+            <span>(29) 9138-4472</span>
+          </div>
+      
+          <div class="contact-info">
+            <img src="IMG/811872.png" alt="foto_telefone" class="img-tele" width="35" height="35">
+            <span>Rua Nao Sei o Nome, 244 Andar 17. Pinhais, PA.</span>
+          </div>
+        </div>
+      
+        <div id="footer">
+          <span id="copyright">
+            &copy; Escritório Pearson Specter. Todos os direitos reservados. │ Feito por
+            <a href="#" class="link">Marcelo Alexandre Alves</a> e
+            <a href="#" class="link">Augusto Borges</a> │
+            <a href="#" class="link">Políticas de Privacidade</a>
+          </span>
+          <a href="#" class="social-link">
+            <img src="IMG/Facebook_f_logo_(2019).svg.png" alt="foto_facebook" width="42" height="42">
+          </a>
+          <a href="#" class="social-link">
+            <img src="IMG/pngtree-instagram-icon-png-image_6315974.png" alt="foto_instagram" width="42" height="42">
+          </a>
+          <a href="#" class="social-link">
+            <img src="IMG/174857.png" alt="foto_linkedin" width="42" height="42">
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
